@@ -1,0 +1,11 @@
+
+.container-home{
+    display: grid;
+    grid-template-columns: auto 4fr;
+}
+.heading{
+    text-align: center;
+    font-weight: 500;
+    font-size: 50vw;
+    color: rgb(235, 44, 11);
+}
