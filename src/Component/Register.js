@@ -26,8 +26,8 @@ export default class Register extends Component {
             alert('please fill the all fields');
             return false;
         }
-        if(this.state.name.length < 6){
-            alert('Name should be more than 6 letters');
+        if(this.state.name.length <= 5){
+            alert('Name should be minimum 5 letters');
             return false;
         }
         var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
@@ -40,10 +40,12 @@ export default class Register extends Component {
             alert('your password must be 6 charecters')
             return false;
         }
+        else{
+            return true
+        }
     }
 
-    handleSubmit=()=>{
-        
+    handleSubmit=()=>{  
         this.validation();
         const data = {
             name: this.state.name,

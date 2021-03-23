@@ -26,7 +26,7 @@ export default class Profile extends Component {
                     <h2>Welcome to <strong>{this.state.userName}</strong></h2>
                     </center>
                     <button className="btn btn-danger" onClick={this.handleSubmit}>Logout</button>
-
+                    
                 </div>
                
             </div>
